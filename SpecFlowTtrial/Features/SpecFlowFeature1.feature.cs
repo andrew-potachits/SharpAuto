@@ -147,6 +147,31 @@ this.FeatureBackground();
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Anonymous Finance - Search for Jobs - zero results")]
+        public virtual void AnonymousFinance_SearchForJobs_ZeroResults()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Anonymous Finance - Search for Jobs - zero results", ((string[])(null)));
+#line 26
+this.ScenarioSetup(scenarioInfo);
+#line 4
+this.FeatureBackground();
+#line 27
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 28
+ testRunner.When("The board is Finance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 29
+  testRunner.And("I type keyword \'blablanonexisting query\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 30
+  testRunner.And("I type location \'Minsk, BY\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 31
+  testRunner.And("I do search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 32
+ testRunner.Then("I get Exactly 0 results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

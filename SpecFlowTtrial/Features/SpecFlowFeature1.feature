@@ -22,3 +22,11 @@ Scenario: Anonymous Finance - Search for Java Jobs in NY
 		And I type location 'New York, NY'
 		And I do search
 	Then I get More than 100 results
+
+Scenario: Anonymous Finance - Search for Jobs - zero results 
+	Given I am not logged in
+	When The board is Finance
+		And I type keyword 'blablanonexisting query'
+		And I type location 'Minsk, BY'
+		And I do search
+	Then I get Exactly 0 results
