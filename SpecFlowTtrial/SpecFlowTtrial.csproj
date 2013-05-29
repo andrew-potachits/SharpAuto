@@ -47,11 +47,15 @@
     <Reference Include="WebDriver">
       <HintPath>..\packages\Selenium.WebDriver.2.33.0\lib\net40\WebDriver.dll</HintPath>
     </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium.Support.2.33.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\TestApp.cs" />
-    <Compile Include="Features\Events.cs" />
-    <Compile Include="Features\MyApp.cs" />
+    <Compile Include="App\DummyWebElement.cs" />
+    <Compile Include="App\FinsDriver.cs" />
+    <Compile Include="Setup\EnvironmentSetup.cs" />
+    <Compile Include="Features\FinsApplication.cs" />
     <Compile Include="Features\SpecFlowFeature1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

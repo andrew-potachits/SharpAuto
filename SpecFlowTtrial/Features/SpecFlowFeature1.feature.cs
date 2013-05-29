@@ -97,7 +97,7 @@ this.FeatureBackground();
 #line 9
  testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
- testRunner.When("I enter paa@intetics.com and Newbuild14", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I login using paa@intetics.com and Newbuild14", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -116,9 +116,34 @@ this.FeatureBackground();
 #line 14
  testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 15
- testRunner.When("I enter paa@intetics.com and incorrectPassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I login using paa@intetics.com and incorrectPassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 16
  testRunner.Then("Login Failed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Anonymous Finance - Search for Java Jobs in NY")]
+        public virtual void AnonymousFinance_SearchForJavaJobsInNY()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Anonymous Finance - Search for Java Jobs in NY", ((string[])(null)));
+#line 18
+this.ScenarioSetup(scenarioInfo);
+#line 4
+this.FeatureBackground();
+#line 19
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 20
+ testRunner.When("The board is Finance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 21
+  testRunner.And("I type keyword \'Java\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 22
+  testRunner.And("I type location \'New York, NY\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 23
+  testRunner.And("I do search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 24
+ testRunner.Then("I get More than 100 results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
