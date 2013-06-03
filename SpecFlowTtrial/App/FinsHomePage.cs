@@ -1,28 +1,45 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using SpecFlowTtrial.Setup;
 
 namespace SpecFlowTtrial.App
 {
 
-    public class FinsDriver
+    public class FinsHomePage
     {
+        private readonly IWebDriver _webDriver;
         private readonly TimeSpan _timeout = TimeSpan.FromSeconds(30);
 
-        public FinsDriver()
+        [FindsBy(How = How.Id, Using = "ShowLogin")]
+        private IWebElement _showLoginButton;
+
+        [FindsBy(How = How.Id, Using = "ctl00_ucloginPopup_txtEmail")]
+        private IWebElement _login;
+
+
+        [FindsBy(How = How.Id, Using = "ctl00_ucloginPopup_txtPwd")]
+        private IWebElement _password;
+
+        [FindsBy(How = How.Id, Using = "ctl00_ucloginPopup_btnLogin")]
+        private IWebElement _loginButton;
+
+
+        public FinsHomePage(IWebDriver webDriver)
         {
+            _webDriver = webDriver;
         }
 
         public bool IsLoggedIn
         {
-            get { return EnvironmentSetup.WebDriver.FindElements(By.ClassName("loggedInView")).Count > 0; }
+            get { return _webDriver.FindElements(By.ClassName("loggedInView")).Count > 0; }
         }
 
         public void Logoff()
         {
-            var logoutLink = EnvironmentSetup.WebDriver.FindElements(By.PartialLinkText("Log Out"));
+            var logoutLink = _webDriver.FindElements(By.PartialLinkText("Log Out"));
             if (logoutLink.Count == 0)
                 return;
             logoutLink[0].Click();
@@ -30,28 +47,28 @@ namespace SpecFlowTtrial.App
 
         public void Navigate(string url)
         {
-            EnvironmentSetup.WebDriver.Url = url;
-            EnvironmentSetup.WebDriver.Navigate();
+            _webDriver.Url = url;
+            _webDriver.Navigate();
         }
 
         public void Login(string userName, string password)
         {
-            this[By.Id("ShowLogin")].Click();
+            _showLoginButton.Click();
 
-            this[By.Id("ctl00_ucloginPopup_txtEmail")].SendKeys(userName);
+            _login.SendKeys(userName);
 
-            this[By.Id("ctl00_ucloginPopup_txtPwd")].SendKeys(password);
+            _password.SendKeys(password);
 
-            this[By.Id("ctl00_ucloginPopup_btnLogin")].Click();
+            _loginButton.Click();
 
             WaitFor(driver => driver.FindElements(By.Id("ctl00_DefaultContent_pnlError")).Count > 0 ||
                 driver.FindElements(By.Id("ctl00_UCHeader_logoutPnl")).Count > 0);
         }
 
-        private void WaitFor<TResult>(Func<IWebDriver, TResult> function)
+        private TResult WaitFor<TResult>(Func<IWebDriver, TResult> function)
         {
-            var webDriverWait = new WebDriverWait(EnvironmentSetup.WebDriver, _timeout);
-            webDriverWait.Until(function);
+            var webDriverWait = new WebDriverWait(_webDriver, _timeout);
+            return webDriverWait.Until(function);
         }
 
         public void SwitchBoard(string board)
@@ -100,9 +117,14 @@ namespace SpecFlowTtrial.App
             }
         }
 
+        public HeaderSearchControl HeaderSearchControl
+        {
+            get { return PageFactory.InitElements<HeaderSearchControl>(_webDriver); }
+        }
+
         public IWebElement this[By by] { 
             get { 
-                var elem = EnvironmentSetup.WebDriver.FindElements(by);
+                var elem = _webDriver.FindElements(by);
                 if (elem.Count > 0)
                     return elem[0];
                 return new DummyWebElement();
@@ -122,5 +144,22 @@ namespace SpecFlowTtrial.App
         {
             this[By.Id("ctl00_DefaultContent_UCSimpleSearch_btnGoto")].Click();
         }
+    }
+
+    public class HeaderSearchControl
+    {
+        public HeaderSearchControl(IWebDriver webDriver)
+        {
+            
+        }
+        [FindsBy(How = How.Id, Using = "ctl00_UCHeader_ucFedFields_srchKeywords")]
+        public IWebElement Keyword { get; set; }
+
+        [FindsBy(How = How.Id, Using = "ctl00_UCHeader_ucFedFields_srchLocation")]
+        public IWebElement Location { get; set; }
+
+        [FindsBy(How = How.Id, Using = "ctl00_UCHeader_ucFedFields_srchCountry")]
+        public IWebElement Country { get; set; }
+
     }
 }

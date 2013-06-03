@@ -53,7 +53,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\DummyWebElement.cs" />
-    <Compile Include="App\FinsDriver.cs" />
+    <Compile Include="App\FinsHomePage.cs" />
+    <Compile Include="App\WebElementExtentions.cs" />
+    <Compile Include="Features\ResultType.cs" />
+    <Compile Include="Features\SearchBindings.cs" />
+    <Compile Include="Features\SearchFacility.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SearchFacility.feature</DependentUpon>
+    </Compile>
     <Compile Include="Setup\EnvironmentSetup.cs" />
     <Compile Include="Features\FinsApplication.cs" />
     <Compile Include="Features\SpecFlowFeature1.feature.cs">
@@ -65,6 +73,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\SearchFacility.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SearchFacility.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\SpecFlowFeature1.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>

@@ -1,5 +1,7 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium.Support.PageObjects;
 using SpecFlowTtrial.App;
+using SpecFlowTtrial.Setup;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowTtrial.Features
@@ -7,70 +9,67 @@ namespace SpecFlowTtrial.Features
     [Binding]
     public class FinsApplication
     {
-        private readonly FinsDriver _app;
+        private readonly FinsHomePage _homePage;
         // For additional details on SpecFlow step definitions see http://go.specflow.org/doc-stepdef
 
-        public FinsApplication()
+        public FinsApplication(IWebDriverHolder holder)
         {
-            if (!FeatureContext.Current.TryGetValue("app", out _app))
-            {
-                _app = new FinsDriver();
-                FeatureContext.Current.Add("app", _app);
-            }
+            _homePage = PageFactory.InitElements<FinsHomePage>(holder.WebDriver);
         }
 
         [Given("navigate to (.*)")]
         public void NavigateTo(string url)
         {
-            _app.Navigate(url);
+            _homePage.Navigate(url);
         }
 
         [Given("I am not logged in")]
         public void UserIsNotLoggedIn()
         {
-            _app.Logoff();
+            _homePage.Logoff();
         }
 
         [When("I open (.*)")]
         public void UserOpen(string page)
         {
-            _app.Navigate(page);
+            _homePage.Navigate(page);
         }
 
         [When("I login using (.*) and (.*)")]
         public void UserEntered(string userName, string password)
         {
-            _app.Login(userName, password);
+            _homePage.Login(userName, password);
         }
 
         [Then("Login (.*)")]
         public void CheckLogin(LoginStatus status)
         {
-            Assert.AreEqual(_app.IsLoggedIn, status == LoginStatus.Succeeded);
+            Assert.AreEqual(_homePage.IsLoggedIn, status == LoginStatus.Succeeded);
         }
 
         [When("The board is (Finance|Sales|IT|Asia|Europe)")]
+        [Given("The board is (Finance|Sales|IT|Asia|Europe)")]
         public void OpenBoard(string board)
         {
-            _app.SwitchBoard(board);
+            _homePage.SwitchBoard(board);
         }
 
         [When("I type keyword '(.*)'")]
         public void TypeInKeyword(string keyword)
         {
-            _app.TypeInKeyword(keyword);
+            _homePage.TypeInKeyword(keyword);
         }
 
         [When("I type location '(.*)'")]
         public void TypeInLocation(string location)
         {
-            _app.TypeInLocation(location);
+            _homePage.TypeInLocation(location);
         }
 
         [When("I do search")]
         public void DoSearch()
         {
-            _app.Search();
+            _homePage.Search();
         }
 
         [Then(@"I get (More|Less) than (\d+) results")]
@@ -78,11 +77,11 @@ namespace SpecFlowTtrial.Features
         public void ValidateResults(ComparisonOperator comparisonOperator, int amountOfResults)
         {
             if (comparisonOperator == ComparisonOperator.Exactly)
-                Assert.AreEqual(amountOfResults, _app.SearchResultsCount);
+                Assert.AreEqual(amountOfResults, _homePage.SearchResultsCount);
             else if (comparisonOperator == ComparisonOperator.Less)
-                Assert.Less(_app.SearchResultsCount, amountOfResults);
+                Assert.Less(_homePage.SearchResultsCount, amountOfResults);
             else if (comparisonOperator == ComparisonOperator.More)
-                Assert.Greater(_app.SearchResultsCount, amountOfResults);
+                Assert.Greater(_homePage.SearchResultsCount, amountOfResults);
             else 
                 Assert.IsTrue(false, "Not supported expression?");
         }
