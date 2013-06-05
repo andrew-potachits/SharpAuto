@@ -125,7 +125,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 27
  testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 28
-  testRunner.And("The board is \'Finance\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("The board is Finance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 29
  testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 30
@@ -150,7 +150,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 36
  testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 37
-  testRunner.And("The board is \'Finance\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("The board is Finance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 38
  testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 39

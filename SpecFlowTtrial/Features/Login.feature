@@ -25,7 +25,7 @@ Scenario: login in Get Started Now section at home page
 # FINANCE 
 Scenario: login in the header at Finance board
 	Given I am not logged in 
-		And The board is 'Finance'
+		And The board is Finance
 	When in the header I click button 'Login'
 		And in the popup login form I enter login 'paa@intetics.com'
 		And in the popup login form I enter password 'Newbuild14'
@@ -34,7 +34,7 @@ Scenario: login in the header at Finance board
 
 Scenario: login by My Dashboard menu at Finance board
 	Given I am not logged in 
-		And The board is 'Finance'
+		And The board is Finance
 	When in the menu I click item 'My Dashboard'
 		And in the login form I enter login 'paa@intetics.com'
 		And in the login form I enter password 'Newbuild14'
