@@ -70,21 +70,21 @@ namespace SpecFlowTtrial.Features
         public virtual void LoginInTheHeaderAtHomePage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login in the header at home page", ((string[])(null)));
-#line 7
-this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 9
-  testRunner.And("The board is \'none\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
- testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is none", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11
-  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
-  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 13
-  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 14
+  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 15
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -95,21 +95,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginInGetStartedNowSectionAtHomePage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login in Get Started Now section at home page", ((string[])(null)));
-#line 16
-this.ScenarioSetup(scenarioInfo);
 #line 17
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 18
-  testRunner.And("The board is \'none\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 19
- testRunner.When("I click button \'Get Started Now\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'none\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 20
-  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I click button \'Get Started Now\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 21
-  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 22
-  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 23
+  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 24
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -120,21 +120,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginInTheHeaderAtFinanceBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login in the header at Finance board", ((string[])(null)));
-#line 26
-this.ScenarioSetup(scenarioInfo);
 #line 27
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 28
-  testRunner.And("The board is \'Finance\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 29
- testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Finance\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
-  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 31
-  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 32
-  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 33
+  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 34
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -145,21 +145,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginByMyDashboardMenuAtFinanceBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login by My Dashboard menu at Finance board", ((string[])(null)));
-#line 35
-this.ScenarioSetup(scenarioInfo);
 #line 36
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 37
-  testRunner.And("The board is \'Finance\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 38
- testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Finance\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 39
-  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 40
-  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 41
-  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 42
+  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 43
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -170,21 +170,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginInTheHeaderAtTechnologyBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login in the header at Technology board", ((string[])(null)));
-#line 45
-this.ScenarioSetup(scenarioInfo);
 #line 46
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 47
-  testRunner.And("The board is \'Technology\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 48
- testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Technology\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 49
-  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 50
-  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 51
-  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 52
+  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 53
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -195,21 +195,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginByMyDashboardMenuAtTechnologyBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login by My Dashboard menu at Technology board", ((string[])(null)));
-#line 54
-this.ScenarioSetup(scenarioInfo);
 #line 55
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 56
-  testRunner.And("The board is \'Technology\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 57
- testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Technology\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 58
-  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 59
-  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 60
-  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 61
+  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 62
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -220,21 +220,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginInTheHeaderAtSalesBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login in the header at Sales board", ((string[])(null)));
-#line 64
-this.ScenarioSetup(scenarioInfo);
 #line 65
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 66
-  testRunner.And("The board is \'Sales\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 67
- testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Sales\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 68
-  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 69
-  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 70
-  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 71
+  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 72
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -245,21 +245,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginByMyDashboardMenuAtSalesBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login by My Dashboard menu at Sales board", ((string[])(null)));
-#line 73
-this.ScenarioSetup(scenarioInfo);
 #line 74
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 75
-  testRunner.And("The board is \'Sales\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 76
- testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Sales\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 77
-  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 78
-  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 79
-  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 80
+  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 81
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -270,21 +270,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginInTheHeaderAtStudentBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login in the header at Student board", ((string[])(null)));
-#line 83
-this.ScenarioSetup(scenarioInfo);
 #line 84
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 85
-  testRunner.And("The board is \'Student\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 86
- testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Student\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 87
-  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 88
-  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 89
-  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 90
+  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 91
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -295,21 +295,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginByMyDashboardMenuAtStudentBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login by My Dashboard menu at Student board", ((string[])(null)));
-#line 92
-this.ScenarioSetup(scenarioInfo);
 #line 93
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 94
-  testRunner.And("The board is \'Student\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 95
- testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Student\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 96
-  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 97
-  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 98
-  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 99
+  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 100
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -320,21 +320,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginInTheHeaderAtEuropeBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login in the header at Europe board", ((string[])(null)));
-#line 102
-this.ScenarioSetup(scenarioInfo);
 #line 103
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 104
-  testRunner.And("The board is Europe", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 105
- testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is Europe", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 106
-  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 107
-  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 108
-  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 109
+  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 110
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -345,21 +345,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginByMyDashboardMenuAtEuropeBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login by My Dashboard menu at Europe board", ((string[])(null)));
-#line 111
-this.ScenarioSetup(scenarioInfo);
 #line 112
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 113
-  testRunner.And("The board is \'Europe\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 114
- testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Europe\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 115
-  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 116
-  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 117
-  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 118
+  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 119
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -370,21 +370,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginInTheHeaderAtAsiaBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login in the header at Asia board", ((string[])(null)));
-#line 121
-this.ScenarioSetup(scenarioInfo);
 #line 122
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 123
-  testRunner.And("The board is Asia", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 124
- testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is Asia", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 125
-  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the header I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 126
-  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 127
-  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the popup login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 128
+  testRunner.And("in the popup login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 129
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -395,21 +395,21 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void LoginByMyDashboardMenuAtAsiaBoard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login by My Dashboard menu at Asia board", ((string[])(null)));
-#line 130
-this.ScenarioSetup(scenarioInfo);
 #line 131
- testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 132
-  testRunner.And("The board is \'Asia\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I am not logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 133
- testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.And("The board is \'Asia\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 134
-  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("in the menu I click item \'My Dashboard\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 135
-  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter login \'paa@intetics.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 136
-  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("in the login form I enter password \'Newbuild14\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 137
+  testRunner.And("in the login form I click button \'Login\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 138
  testRunner.Then("Login Succeeded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

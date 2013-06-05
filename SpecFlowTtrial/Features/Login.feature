@@ -4,9 +4,10 @@
 	I want to be able to log in at FINS from all possible places
 
 # HOME PAGE
+
 Scenario: login in the header at home page 
 	Given I am not logged in 
-		And The board is 'none'
+		And The board is none
 	When in the header I click button 'Login'
 		And in the popup login form I enter login 'paa@intetics.com'
 		And in the popup login form I enter password 'Newbuild14'
