@@ -54,7 +54,18 @@
   <ItemGroup>
     <Compile Include="App\DummyWebElement.cs" />
     <Compile Include="App\FinsHomePage.cs" />
+    <Compile Include="App\HeaderSearchControl.cs" />
     <Compile Include="App\WebElementExtentions.cs" />
+    <Compile Include="Features\ApplyForJob.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplyForJob.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Login.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\ResultType.cs" />
     <Compile Include="Features\SearchBindings.cs" />
     <Compile Include="Features\SearchFacility.feature.cs">
@@ -73,6 +84,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\ApplyForJob.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ApplyForJob.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Login.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Login.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\SearchFacility.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SearchFacility.feature.cs</LastGenOutput>

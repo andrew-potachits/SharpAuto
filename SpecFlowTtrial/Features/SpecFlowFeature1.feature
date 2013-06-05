@@ -1,12 +1,11 @@
 ﻿Feature: TestFeature
-	
+
 
 Background: open homepage
 Scenario: go to homepage
 	Given navigate to http://www.fins.com/
 
 Scenario: login OK
-bla
 	Given I am not logged in
 	When I login using paa@intetics.com and Newbuild14
 	Then Login Succeeded

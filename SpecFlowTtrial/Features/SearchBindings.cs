@@ -39,9 +39,10 @@ namespace SpecFlowTtrial.Features
         }
 
         [When(@"in the header I search for (all|jobs|articles|companies)")]
-        public void SearchFromFooter(SearchTargets searchTarget)
+        public void SearchFromFooter(string searchTarget)
         {
-            
+            var finsHomePage = PageFactory.InitElements<FinsHomePage>(_webDriver);
+            finsHomePage.HeaderSearchControl.SelectSearchType(searchTarget);
         }
 
         [Then(@"Search has (more|less) than (\d+) (jobs|companies|overall results)")]
