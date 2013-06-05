@@ -13,7 +13,7 @@ Scenario: login in the header at home page
 		And in the popup login form I click button 'Login'
 	Then Login Succeeded
 
-Scenario: login in Get Started Now section at home page 
+Scenario: login in Get Started Now section at home page  
 	Given I am not logged in 
 		And The board is 'none'
 	When I click button 'Get Started Now'
